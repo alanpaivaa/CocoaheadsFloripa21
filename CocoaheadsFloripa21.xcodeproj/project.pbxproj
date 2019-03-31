@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F366ACBE22513A410026C532 /* NameTagger.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F366ACBD22513A410026C532 /* NameTagger.mlmodel */; };
+		F366ACC022513A6B0026C532 /* CustomNameTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */; };
 		F371BEDE22512AB60019B7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F371BEDD22512AB60019B7C2 /* AppDelegate.swift */; };
 		F371BEE022512AB70019B7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F371BEDF22512AB70019B7C2 /* ViewController.swift */; };
 		F371BEE322512AB70019B7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F371BEE122512AB70019B7C2 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F366ACBD22513A410026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
+		F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNameTagger.swift; sourceTree = "<group>"; };
 		F371BEDB22512AB60019B7C2 /* WordTagging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTagging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F371BEDD22512AB60019B7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F371BEDF22512AB70019B7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				F371BEE422512AB70019B7C2 /* Assets.xcassets */,
 				F371BEE622512AB70019B7C2 /* LaunchScreen.storyboard */,
 				F371BEE922512AB70019B7C2 /* Info.plist */,
+				F366ACBD22513A410026C532 /* NameTagger.mlmodel */,
+				F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */,
 			);
 			path = WordTagging;
 			sourceTree = "<group>";
@@ -201,6 +207,8 @@
 			files = (
 				F371BEE022512AB70019B7C2 /* ViewController.swift in Sources */,
 				F371BEDE22512AB60019B7C2 /* AppDelegate.swift in Sources */,
+				F366ACC022513A6B0026C532 /* CustomNameTagger.swift in Sources */,
+				F366ACBE22513A410026C532 /* NameTagger.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
