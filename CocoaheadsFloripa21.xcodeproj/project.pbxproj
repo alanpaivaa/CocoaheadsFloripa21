@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		F32E161522516E3100AD1226 /* WordTaggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTaggingViewController.swift; sourceTree = "<group>"; };
 		F32E161A22516F6500AD1226 /* TextClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassificationViewController.swift; sourceTree = "<group>"; };
+		F32E161F2251737400AD1226 /* Pipeline.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Pipeline.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F366ACBF22513A6B0026C532 /* CustomWordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordTagger.swift; sourceTree = "<group>"; };
 		F366ACD7225147EA0026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
 		F371BEF222512B9E0019B7C2 /* Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +129,7 @@
 				F3EC28E122516CE90085C371 /* Info.plist */,
 				F32E161922516F1100AD1226 /* WordTagging */,
 				F32E161422516D3F00AD1226 /* TextClassification */,
+				F32E161F2251737400AD1226 /* Pipeline.playground */,
 			);
 			path = CocoaheadsFloripa21;
 			sourceTree = "<group>";
