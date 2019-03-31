@@ -55,7 +55,7 @@ names.forEach { name in
 
 // Otherwise, persist the CoreML model file
 let metadata = MLModelMetadata(author: "Alan Jeferson",
-                               shortDescription: "Names for Cocoaheads",
+                               shortDescription: "Names Tagger for Cocoaheads",
                                version: "1.0")
 let outputPath = "/Users/alanjeferson/Desktop/nlf/NameTagger.mlmodel"
 let outputURL = URL(fileURLWithPath: outputPath)

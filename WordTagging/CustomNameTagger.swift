@@ -8,6 +8,7 @@
 
 import Foundation
 import NaturalLanguage
+import Utils
 
 class CustomNameTagger {
   private let scheme = NLTagScheme("Name")
@@ -33,11 +34,5 @@ class CustomNameTagger {
         let token = String(subString)
         return (token, tag.rawValue)
     }
-  }
-}
-
-extension String {
-  var fullRange: Range<String.Index> {
-    return startIndex..<endIndex
   }
 }

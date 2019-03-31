@@ -20,6 +20,11 @@
 		F371BEE522512AB70019B7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F371BEE422512AB70019B7C2 /* Assets.xcassets */; };
 		F371BEE822512AB70019B7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F371BEE622512AB70019B7C2 /* LaunchScreen.storyboard */; };
 		F371BEF622512B9E0019B7C2 /* Training.h in Headers */ = {isa = PBXBuildFile; fileRef = F371BEF422512B9E0019B7C2 /* Training.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3EC28B92251521F0085C371 /* MovieReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */; };
+		F3EC28BB2251529F0085C371 /* CustomMovieReviewClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28BA2251529F0085C371 /* CustomMovieReviewClassifier.swift */; };
+		F3EC28C5225155B80085C371 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EC28C3225155B80085C371 /* Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3EC28CA225155C50085C371 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28C9225155C50085C371 /* StringExtension.swift */; };
+		F3EC28CC225155E70085C371 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EC28C1225155B70085C371 /* Utils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,13 @@
 		F371BEF422512B9E0019B7C2 /* Training.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Training.h; sourceTree = "<group>"; };
 		F371BEF522512B9E0019B7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F371BEFA22512BD70019B7C2 /* NameTagger.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NameTagger.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F3EC28B722514EB70085C371 /* TextClassification.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TextClassification.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MovieReviewClassifier.mlmodel; sourceTree = "<group>"; };
+		F3EC28BA2251529F0085C371 /* CustomMovieReviewClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMovieReviewClassifier.swift; sourceTree = "<group>"; };
+		F3EC28C1225155B70085C371 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3EC28C3225155B80085C371 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F3EC28C4225155B80085C371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EC28C9225155C50085C371 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EC28CC225155E70085C371 /* Utils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F371BEEF22512B9E0019B7C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EC28BE225155B70085C371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +99,8 @@
 				F366ACCE22513F340026C532 /* Assets.xcassets */,
 				F366ACD022513F340026C532 /* LaunchScreen.storyboard */,
 				F366ACD322513F340026C532 /* Info.plist */,
+				F3EC28BA2251529F0085C371 /* CustomMovieReviewClassifier.swift */,
+				F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */,
 			);
 			path = TextClassification;
 			sourceTree = "<group>";
@@ -88,8 +110,10 @@
 			children = (
 				F371BEDC22512AB60019B7C2 /* WordTagging */,
 				F366ACC622513F330026C532 /* TextClassification */,
+				F3EC28C2225155B80085C371 /* Utils */,
 				F371BEF322512B9E0019B7C2 /* Training */,
 				F371BEC322512A8F0019B7C2 /* Products */,
+				F3EC28CB225155E70085C371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +123,7 @@
 				F371BEDB22512AB60019B7C2 /* WordTagging.app */,
 				F371BEF222512B9E0019B7C2 /* Training.framework */,
 				F366ACC522513F320026C532 /* TextClassification.app */,
+				F3EC28C1225155B70085C371 /* Utils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,8 +149,26 @@
 				F371BEF422512B9E0019B7C2 /* Training.h */,
 				F371BEF522512B9E0019B7C2 /* Info.plist */,
 				F371BEFA22512BD70019B7C2 /* NameTagger.playground */,
+				F3EC28B722514EB70085C371 /* TextClassification.playground */,
 			);
 			path = Training;
+			sourceTree = "<group>";
+		};
+		F3EC28C2225155B80085C371 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3EC28C3225155B80085C371 /* Utils.h */,
+				F3EC28C4225155B80085C371 /* Info.plist */,
+				F3EC28C9225155C50085C371 /* StringExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F3EC28CB225155E70085C371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +179,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F371BEF622512B9E0019B7C2 /* Training.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EC28BC225155B70085C371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EC28C5225155B80085C371 /* Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +245,24 @@
 			productReference = F371BEF222512B9E0019B7C2 /* Training.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F3EC28C0225155B70085C371 /* Utils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3EC28C6225155B80085C371 /* Build configuration list for PBXNativeTarget "Utils" */;
+			buildPhases = (
+				F3EC28BC225155B70085C371 /* Headers */,
+				F3EC28BD225155B70085C371 /* Sources */,
+				F3EC28BE225155B70085C371 /* Frameworks */,
+				F3EC28BF225155B70085C371 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utils;
+			productName = Utils;
+			productReference = F3EC28C1225155B70085C371 /* Utils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +282,10 @@
 					F371BEF122512B9E0019B7C2 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					F3EC28C0225155B70085C371 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 				};
 			};
 			buildConfigurationList = F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "CocoaheadsFloripa21" */;
@@ -231,6 +304,7 @@
 				F371BEDA22512AB60019B7C2 /* WordTagging */,
 				F371BEF122512B9E0019B7C2 /* Training */,
 				F366ACC422513F320026C532 /* TextClassification */,
+				F3EC28C0225155B70085C371 /* Utils */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +337,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3EC28BF225155B70085C371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,6 +353,8 @@
 			files = (
 				F366ACCA22513F330026C532 /* ViewController.swift in Sources */,
 				F366ACC822513F330026C532 /* AppDelegate.swift in Sources */,
+				F3EC28BB2251529F0085C371 /* CustomMovieReviewClassifier.swift in Sources */,
+				F3EC28B92251521F0085C371 /* MovieReviewClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3EC28BD225155B70085C371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3EC28CA225155C50085C371 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +672,65 @@
 			};
 			name = Release;
 		};
+		F3EC28C7225155B80085C371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Utils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3EC28C8225155B80085C371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Utils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.Utils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +766,15 @@
 			buildConfigurations = (
 				F371BEF822512B9E0019B7C2 /* Debug */,
 				F371BEF922512B9E0019B7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3EC28C6225155B80085C371 /* Build configuration list for PBXNativeTarget "Utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3EC28C7225155B80085C371 /* Debug */,
+				F3EC28C8225155B80085C371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,11 +13,20 @@ class ViewController: UIViewController {
   @IBOutlet weak var inputTextView: UITextView!
   @IBOutlet weak var resultLabel: UILabel!
   
+  private let classifier = CustomMovieReviewClassifier()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
 
   @IBAction func didTouchClassifyButton(_ sender: Any) {
+    guard let text = inputTextView.text,
+      !text.isEmpty,
+      let predictedClass = classifier.prediction(for: text) else {
+        return
+    }
+
+    resultLabel.text = predictedClass
   }
 }
 
