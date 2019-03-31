@@ -40,11 +40,9 @@ class ViewController: UITableViewController {
     let tags = tagger.tag(sent: sent)
     let maleTokens = tags.filter { $0.1 == "MALE" }.map { $0.0 }
     let femaleTokens = tags.filter { $0.1 == "FEMALE" }.map { $0.0 }
-    let otherTokens = tags.filter { $0.1 == "NONE" }.map { $0.0 }
     words = [
       (title: "Female", tokens: femaleTokens),
-      (title: "Male", tokens: maleTokens),
-      (title: "Other", tokens: otherTokens)
+      (title: "Male", tokens: maleTokens)
     ]
     tableView.reloadData()
   }

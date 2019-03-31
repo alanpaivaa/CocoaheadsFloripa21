@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F366ACBE22513A410026C532 /* NameTagger.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F366ACBD22513A410026C532 /* NameTagger.mlmodel */; };
 		F366ACC022513A6B0026C532 /* CustomNameTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */; };
+		F366ACC822513F330026C532 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F366ACC722513F330026C532 /* AppDelegate.swift */; };
+		F366ACCA22513F330026C532 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F366ACC922513F330026C532 /* ViewController.swift */; };
+		F366ACCD22513F330026C532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F366ACCB22513F330026C532 /* Main.storyboard */; };
+		F366ACCF22513F340026C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F366ACCE22513F340026C532 /* Assets.xcassets */; };
+		F366ACD222513F340026C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F366ACD022513F340026C532 /* LaunchScreen.storyboard */; };
+		F366ACD8225147EA0026C532 /* NameTagger.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F366ACD7225147EA0026C532 /* NameTagger.mlmodel */; };
 		F371BEDE22512AB60019B7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F371BEDD22512AB60019B7C2 /* AppDelegate.swift */; };
 		F371BEE022512AB70019B7C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F371BEDF22512AB70019B7C2 /* ViewController.swift */; };
 		F371BEE322512AB70019B7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F371BEE122512AB70019B7C2 /* Main.storyboard */; };
@@ -18,8 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F366ACBD22513A410026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
 		F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNameTagger.swift; sourceTree = "<group>"; };
+		F366ACC522513F320026C532 /* TextClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F366ACC722513F330026C532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F366ACC922513F330026C532 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F366ACCC22513F330026C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F366ACCE22513F340026C532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F366ACD122513F340026C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F366ACD322513F340026C532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F366ACD7225147EA0026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
 		F371BEDB22512AB60019B7C2 /* WordTagging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordTagging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F371BEDD22512AB60019B7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F371BEDF22512AB70019B7C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F366ACC222513F320026C532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F371BED822512AB60019B7C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +70,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F366ACC622513F330026C532 /* TextClassification */ = {
+			isa = PBXGroup;
+			children = (
+				F366ACC722513F330026C532 /* AppDelegate.swift */,
+				F366ACC922513F330026C532 /* ViewController.swift */,
+				F366ACCB22513F330026C532 /* Main.storyboard */,
+				F366ACCE22513F340026C532 /* Assets.xcassets */,
+				F366ACD022513F340026C532 /* LaunchScreen.storyboard */,
+				F366ACD322513F340026C532 /* Info.plist */,
+			);
+			path = TextClassification;
+			sourceTree = "<group>";
+		};
 		F371BEB922512A8F0019B7C2 = {
 			isa = PBXGroup;
 			children = (
 				F371BEDC22512AB60019B7C2 /* WordTagging */,
+				F366ACC622513F330026C532 /* TextClassification */,
 				F371BEF322512B9E0019B7C2 /* Training */,
 				F371BEC322512A8F0019B7C2 /* Products */,
 			);
@@ -65,6 +98,7 @@
 			children = (
 				F371BEDB22512AB60019B7C2 /* WordTagging.app */,
 				F371BEF222512B9E0019B7C2 /* Training.framework */,
+				F366ACC522513F320026C532 /* TextClassification.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,8 +112,8 @@
 				F371BEE422512AB70019B7C2 /* Assets.xcassets */,
 				F371BEE622512AB70019B7C2 /* LaunchScreen.storyboard */,
 				F371BEE922512AB70019B7C2 /* Info.plist */,
-				F366ACBD22513A410026C532 /* NameTagger.mlmodel */,
 				F366ACBF22513A6B0026C532 /* CustomNameTagger.swift */,
+				F366ACD7225147EA0026C532 /* NameTagger.mlmodel */,
 			);
 			path = WordTagging;
 			sourceTree = "<group>";
@@ -108,6 +142,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F366ACC422513F320026C532 /* TextClassification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F366ACD422513F340026C532 /* Build configuration list for PBXNativeTarget "TextClassification" */;
+			buildPhases = (
+				F366ACC122513F320026C532 /* Sources */,
+				F366ACC222513F320026C532 /* Frameworks */,
+				F366ACC322513F320026C532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextClassification;
+			productName = TextClassification;
+			productReference = F366ACC522513F320026C532 /* TextClassification.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F371BEDA22512AB60019B7C2 /* WordTagging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F371BEEA22512AB70019B7C2 /* Build configuration list for PBXNativeTarget "WordTagging" */;
@@ -153,6 +204,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Alan;
 				TargetAttributes = {
+					F366ACC422513F320026C532 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					F371BEDA22512AB60019B7C2 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -176,11 +230,22 @@
 			targets = (
 				F371BEDA22512AB60019B7C2 /* WordTagging */,
 				F371BEF122512B9E0019B7C2 /* Training */,
+				F366ACC422513F320026C532 /* TextClassification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F366ACC322513F320026C532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F366ACD222513F340026C532 /* LaunchScreen.storyboard in Resources */,
+				F366ACCF22513F340026C532 /* Assets.xcassets in Resources */,
+				F366ACCD22513F330026C532 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F371BED922512AB60019B7C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,14 +266,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F366ACC122513F320026C532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F366ACCA22513F330026C532 /* ViewController.swift in Sources */,
+				F366ACC822513F330026C532 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F371BED722512AB60019B7C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F371BEE022512AB70019B7C2 /* ViewController.swift in Sources */,
+				F366ACD8225147EA0026C532 /* NameTagger.mlmodel in Sources */,
 				F371BEDE22512AB60019B7C2 /* AppDelegate.swift in Sources */,
 				F366ACC022513A6B0026C532 /* CustomNameTagger.swift in Sources */,
-				F366ACBE22513A410026C532 /* NameTagger.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +296,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F366ACCB22513F330026C532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F366ACCC22513F330026C532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F366ACD022513F340026C532 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F366ACD122513F340026C532 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		F371BEE122512AB70019B7C2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -241,6 +331,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F366ACD522513F340026C532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
+				INFOPLIST_FILE = TextClassification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.TextClassification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F366ACD622513F340026C532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NVW2SSPZ5;
+				INFOPLIST_FILE = TextClassification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ajeferson.TextClassification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F371BED222512A900019B7C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -458,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F366ACD422513F340026C532 /* Build configuration list for PBXNativeTarget "TextClassification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F366ACD522513F340026C532 /* Debug */,
+				F366ACD622513F340026C532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F371BEBD22512A8F0019B7C2 /* Build configuration list for PBXProject "CocoaheadsFloripa21" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

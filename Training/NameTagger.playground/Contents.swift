@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/NameTagger.playground/Resources/NamesLess.json"
+let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/NameTagger.playground/Resources/NamesFull.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 
