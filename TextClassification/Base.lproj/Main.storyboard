@@ -6,38 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
-        <scene sceneID="rZe-zb-Rf4">
-            <objects>
-                <tableViewController id="TV6-id-eA2" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gT7-Sa-lZR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y0s-V4-FYq">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y0s-V4-FYq" id="MGt-Kc-LWQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="TV6-id-eA2" id="ccN-kD-41o"/>
-                            <outlet property="delegate" destination="TV6-id-eA2" id="waX-W8-6Ly"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="7sh-jI-NdT"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ym6-JG-VYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1309.5999999999999" y="-342.27886056971516"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="V10-fe-TFh">
             <objects>
@@ -49,12 +21,80 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TV6-id-eA2" kind="relationship" relationship="rootViewController" id="GNi-Yq-5rj"/>
+                        <segue destination="HqH-8d-0bW" kind="relationship" relationship="rootViewController" id="NFA-z6-7O6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akv-xS-TBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="368.80000000000001" y="-342.27886056971516"/>
+        </scene>
+        <!--Movie Reviews-->
+        <scene sceneID="Afx-ay-Syg">
+            <objects>
+                <viewController id="HqH-8d-0bW" customClass="ViewController" customModule="TextClassification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GJN-G5-gnv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ia3-Hy-Wg2">
+                                <rect key="frame" x="37.5" y="94" width="300" height="260"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1HD-on-juR">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="DlG-PJ-fDh"/>
+                                            <constraint firstAttribute="width" constant="300" id="nqs-ia-fVl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4B-Af-qx6">
+                                        <rect key="frame" x="123" y="230" width="54" height="30"/>
+                                        <state key="normal" title="Classify"/>
+                                        <connections>
+                                            <action selector="didTouchClassifyButton:" destination="HqH-8d-0bW" eventType="touchUpInside" id="25e-ho-QGa"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l6-rK-9Nl">
+                                        <rect key="frame" x="150" y="150" width="0.0" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4Ko-ez-fFe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7l6-rK-9Nl" firstAttribute="top" secondItem="1HD-on-juR" secondAttribute="bottom" constant="50" id="3zp-dP-Ege"/>
+                                    <constraint firstItem="1HD-on-juR" firstAttribute="leading" secondItem="ia3-Hy-Wg2" secondAttribute="leading" id="Bna-jq-hCk"/>
+                                    <constraint firstAttribute="trailing" secondItem="1HD-on-juR" secondAttribute="trailing" id="Jkh-FI-BaN"/>
+                                    <constraint firstItem="1HD-on-juR" firstAttribute="top" secondItem="ia3-Hy-Wg2" secondAttribute="top" id="KnY-9b-IOQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="W4B-Af-qx6" secondAttribute="bottom" id="ZV1-aD-X8x"/>
+                                    <constraint firstItem="W4B-Af-qx6" firstAttribute="top" secondItem="7l6-rK-9Nl" secondAttribute="bottom" constant="50" id="arI-Yh-b2V"/>
+                                    <constraint firstItem="7l6-rK-9Nl" firstAttribute="centerX" secondItem="ia3-Hy-Wg2" secondAttribute="centerX" id="fpo-jO-LE7"/>
+                                    <constraint firstItem="W4B-Af-qx6" firstAttribute="centerX" secondItem="ia3-Hy-Wg2" secondAttribute="centerX" id="sRF-Qz-YjF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ia3-Hy-Wg2" firstAttribute="centerX" secondItem="Sdh-9A-p3O" secondAttribute="centerX" id="Ys7-Et-bGL"/>
+                            <constraint firstItem="ia3-Hy-Wg2" firstAttribute="top" secondItem="Sdh-9A-p3O" secondAttribute="top" constant="30" id="uYM-yS-Ow7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sdh-9A-p3O"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie Reviews" id="EEi-4Q-kbx"/>
+                    <connections>
+                        <outlet property="inputTextView" destination="1HD-on-juR" id="Ze3-gX-9Tg"/>
+                        <outlet property="resultLabel" destination="7l6-rK-9Nl" id="qbf-YM-O6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qb-QT-6gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="-342.27886056971516"/>
         </scene>
     </scenes>
 </document>

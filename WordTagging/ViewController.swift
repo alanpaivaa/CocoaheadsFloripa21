@@ -15,7 +15,6 @@ class ViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    words = [(title: "Some", tokens: ["a", "b", "c"])]
     tableView.reloadData()
   }
   
