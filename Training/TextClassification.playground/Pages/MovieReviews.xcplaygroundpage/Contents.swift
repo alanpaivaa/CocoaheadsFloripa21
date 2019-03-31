@@ -1,12 +1,12 @@
 import Foundation
 import CreateML
 
-let trainingSetURL = URL(fileURLWithPath: "/Users/alanjeferson/Desktop/movie_reviews/train")
+let trainingSetURL = URL(fileURLWithPath: "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/TextClassification.playground/Pages/MovieReviews.xcplaygroundpage/Resources/train")
 let params = MLTextClassifier.ModelParameters(algorithm: .maxEnt(revision: 1),
                                               language: .english)
 let model = try MLTextClassifier(trainingData: .labeledDirectories(at: trainingSetURL))
 
-let testSetURL = URL(fileURLWithPath: "/Users/alanjeferson/Desktop/movie_reviews/test")
+let testSetURL = URL(fileURLWithPath: "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/TextClassification.playground/Pages/MovieReviews.xcplaygroundpage/Resourcess/test")
 let testMetrics = model.evaluation(on: .labeledDirectories(at: testSetURL))
 print("Test Metrics:")
 print("Accuracy: \(testMetrics.accuracy)")
