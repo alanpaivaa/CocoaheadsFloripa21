@@ -14,6 +14,8 @@
 		F32E161C22516FF700AD1226 /* CustomTextClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28BA2251529F0085C371 /* CustomTextClassifier.swift */; };
 		F32E161D2251702B00AD1226 /* MovieReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */; };
 		F32E161E2251706A00AD1226 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28C9225155C50085C371 /* StringExtension.swift */; };
+		F32E162A2251843B00AD1226 /* RestaurantReviewClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */; };
+		F32E162C2251845800AD1226 /* RestaurantReviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32E162B2251845800AD1226 /* RestaurantReviewer.swift */; };
 		F371BEF622512B9E0019B7C2 /* Training.h in Headers */ = {isa = PBXBuildFile; fileRef = F371BEF422512B9E0019B7C2 /* Training.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3EC28D622516CE80085C371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC28D522516CE80085C371 /* AppDelegate.swift */; };
 		F3EC28DB22516CE80085C371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC28D922516CE80085C371 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		F32E161522516E3100AD1226 /* WordTaggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTaggingViewController.swift; sourceTree = "<group>"; };
 		F32E161A22516F6500AD1226 /* TextClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextClassificationViewController.swift; sourceTree = "<group>"; };
 		F32E161F2251737400AD1226 /* NLP.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NLP.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RestaurantReviewClassifier.mlmodel; sourceTree = "<group>"; };
+		F32E162B2251845800AD1226 /* RestaurantReviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantReviewer.swift; sourceTree = "<group>"; };
 		F366ACBF22513A6B0026C532 /* CustomWordTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordTagger.swift; sourceTree = "<group>"; };
 		F366ACD7225147EA0026C532 /* NameTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NameTagger.mlmodel; sourceTree = "<group>"; };
 		F371BEF222512B9E0019B7C2 /* Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +68,11 @@
 		F32E161422516D3F00AD1226 /* TextClassification */ = {
 			isa = PBXGroup;
 			children = (
+				F32E16292251843B00AD1226 /* RestaurantReviewClassifier.mlmodel */,
 				F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */,
 				F32E161A22516F6500AD1226 /* TextClassificationViewController.swift */,
 				F3EC28BA2251529F0085C371 /* CustomTextClassifier.swift */,
+				F32E162B2251845800AD1226 /* RestaurantReviewer.swift */,
 			);
 			path = TextClassification;
 			sourceTree = "<group>";
@@ -252,10 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32E162A2251843B00AD1226 /* RestaurantReviewClassifier.mlmodel in Sources */,
 				F32E161822516EFB00AD1226 /* NameTagger.mlmodel in Sources */,
 				F32E161C22516FF700AD1226 /* CustomTextClassifier.swift in Sources */,
 				F32E161B22516F6500AD1226 /* TextClassificationViewController.swift in Sources */,
 				F32E161D2251702B00AD1226 /* MovieReviewClassifier.mlmodel in Sources */,
+				F32E162C2251845800AD1226 /* RestaurantReviewer.swift in Sources */,
 				F32E161E2251706A00AD1226 /* StringExtension.swift in Sources */,
 				F3EC28D622516CE80085C371 /* AppDelegate.swift in Sources */,
 				F32E161622516E3100AD1226 /* WordTaggingViewController.swift in Sources */,
