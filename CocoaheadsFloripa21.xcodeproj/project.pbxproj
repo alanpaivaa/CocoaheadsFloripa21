@@ -36,9 +36,9 @@
 		F371BEF222512B9E0019B7C2 /* Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F371BEF422512B9E0019B7C2 /* Training.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Training.h; sourceTree = "<group>"; };
 		F371BEF522512B9E0019B7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F371BEFA22512BD70019B7C2 /* WordTagging.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WordTagging.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F3B6A8532252BA3F00434540 /* BrownTagger.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BrownTagger.mlmodel; sourceTree = "<group>"; };
 		F3B6A8552252BB7600434540 /* BrownTagging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownTagging.swift; sourceTree = "<group>"; };
+		F3B6A8572253C8EF00434540 /* WordTagging.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WordTagging.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F3EC28B722514EB70085C371 /* TextClassification.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TextClassification.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F3EC28B82251521F0085C371 /* MovieReviewClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MovieReviewClassifier.mlmodel; sourceTree = "<group>"; };
 		F3EC28BA2251529F0085C371 /* CustomTextClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextClassifier.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			children = (
 				F371BEF422512B9E0019B7C2 /* Training.h */,
 				F371BEF522512B9E0019B7C2 /* Info.plist */,
-				F371BEFA22512BD70019B7C2 /* WordTagging.playground */,
+				F3B6A8572253C8EF00434540 /* WordTagging.playground */,
 				F3EC28B722514EB70085C371 /* TextClassification.playground */,
 			);
 			path = Training;
