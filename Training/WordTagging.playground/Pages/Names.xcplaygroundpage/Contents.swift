@@ -2,7 +2,7 @@ import Foundation
 import CreateML
 
 // Loading dataset
-let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/WordTagging.playground/Pages/Names.xcplaygroundpage/Resources/NamesLess.json"
+let inputPath = "/Users/alanjeferson/projects/CocoaheadsFloripa21/Training/WordTagging.playground/Pages/Names.xcplaygroundpage/Resources/BrownTags.json"
 let inputURL = URL(fileURLWithPath: inputPath)
 let dataset = try MLDataTable(contentsOf: inputURL)
 
@@ -15,7 +15,7 @@ let dataset = try MLDataTable(contentsOf: inputURL)
 
 // Splitting into training/test sets
 let splitRation = 0.8
-let (trainingSet, testSet) = dataset.randomSplit(by: 0.8, seed: 7)
+let (trainingSet, testSet) = dataset.randomSplit(by: 0.9, seed: 7)
 
 // Crating the model
 let model  = try MLWordTagger(trainingData: dataset,
